@@ -26,4 +26,6 @@ docker compose --profile oracle up -d
 ```
 
 ## Status
-Arquivos criados em 2026-11-13. **Ainda não buildado/testado** — Docker ainda não está instalado na máquina.
+- 2026-11-13: roda na **VM 102 `claude-room`** do `pve01` (Debian 12, Docker 29.9.3, `10.10.10.10`, rede NAT isolada `vmbr2`: sem acesso a LAN/DC/pve01, só internet).
+- Imagem `workspace` buildada e testada (git, gh, pwsh 7.4.6, Python 3.11, Java 17, Node 18, Claude Code 2.1, Chromium).
+- Oracle de teste (`--profile oracle`): ainda **não testado**.

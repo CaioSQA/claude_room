@@ -24,7 +24,7 @@ services:
     image: gvenzl/oracle-xe:21-slim
     container_name: claude_room_oracle
     environment:
-      ORACLE_PASSWORD: ${ORACLE_PASSWORD:?defina ORACLE_PASSWORD no .env}
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD:-}   # obrigatorio so no profile oracle: definir no .env
     ports:
       - "127.0.0.1:1522:1521"                # 1521 do host já é o Oracle local do Caio
     volumes:
